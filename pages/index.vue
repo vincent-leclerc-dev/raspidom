@@ -1,5 +1,10 @@
 <template>
-  <Tutorial/>
+  <div>
+    <h1>Home</h1>
+    <ul>
+      <li><a href="/gpios">GPIOS</a></li>
+    </ul>
+  </div>
 </template>
 
 <script lang="ts">
