@@ -1,10 +1,7 @@
 <template>
   <div>
-    <h1>GPIOS</h1>
-    <ul>
-      <li><a href="/gpios/1">GPIO 1</a></li>
-    </ul>
-    <a href="/">back to home</a>
+    <h1>GPIO {{$route.params.id}}</h1>
+    <a href="/gpios">back to GPIOS</a>
   </div>
 </template>
 
