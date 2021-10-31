@@ -2,7 +2,7 @@
   <div>
     <h1>Home</h1>
     <ul>
-      <li><a href="/gpios">GPIOS</a></li>
+      <li><nuxt-link to="/gpios">GPIOS</nuxt-link></li>
     </ul>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>GPIO {{$route.params.id}}</h1>
-    <a href="/gpios">back to GPIOS</a>
+    <h1>GPIO {{ $route.params.id }}</h1>
+    <nuxt-link to="/gpios">back to GPIOS</nuxt-link>
   </div>
 </template>
 
