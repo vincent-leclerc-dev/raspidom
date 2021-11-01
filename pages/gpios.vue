@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <select v-model="gpioSelected" @change="onGpioChange" name="gpio">
       <option value="0" disabled>Select a GPIO</option>
       <option v-for="(gpio, index) in gpios" :key="index" :value="gpio.id">
@@ -7,7 +7,22 @@
       </option>
     </select>
     <nuxt-child />
-    <nuxt-link to="/">back to home</nuxt-link>
+    <nuxt-link
+      class="
+        flex
+        m-2
+        p-2
+        justify-center
+        bg-blue-500
+        text-white
+        hover:bg-blue-400
+        focus:outline-none
+        rounded-md
+        shadow-lg
+      "
+      to="/"
+      >back</nuxt-link
+    >
   </div>
 </template>
 
