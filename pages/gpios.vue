@@ -1,6 +1,13 @@
- <template>
+<template>
   <div class="container">
-    no GPIO selected
+    <select v-model="gpioSelected" @change="onGpioChange" name="gpio">
+      <option value="0" disabled>Select a GPIO</option>
+      <option v-for="(gpio, index) in gpios" :key="index" :value="gpio.id">
+        {{ gpio.label }}
+      </option>
+    </select>
+    <nuxt-child />
+    <nuxt-link to="/">back to home</nuxt-link>
   </div>
 </template>
 
@@ -35,5 +42,4 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-
 </style>
