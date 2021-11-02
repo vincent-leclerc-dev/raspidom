@@ -7,22 +7,7 @@
       </option>
     </select>
     <nuxt-child />
-    <nuxt-link
-      class="
-        flex
-        m-2
-        p-2
-        justify-center
-        bg-blue-500
-        text-white
-        hover:bg-blue-400
-        focus:outline-none
-        rounded-md
-        shadow-lg
-      "
-      to="/"
-      >back</nuxt-link
-    >
+    <Button text="Back" />
   </div>
 </template>
 
