@@ -1,13 +1,11 @@
 <template>
   <nuxt-link
     class="
+        button
       flex
       m-2
       p-2
       justify-center
-      bg-blue-500
-      text-white
-      hover:bg-blue-400
       focus:outline-none
       rounded-md
       shadow-lg
@@ -33,3 +31,10 @@ export default Vue.extend({
     }
 })
 </script>
+
+<style scoped>
+.button {
+  background-color: #09f;
+  color: #fff;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="bg-blue-500">
+    <nav class="navbar">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
           <div
@@ -27,29 +27,12 @@
               <div class="flex space-x-4">
                 <nuxt-link
                   to="/"
-                  class="
-                    bg-blue-400
-                    text-white
-                    px-3
-                    py-2
-                    rounded-md
-                    text-sm
-                    font-medium
-                  "
-                  aria-current="page"
+                  class="px-3 py-2 rounded-md text-sm font-medium"
                   >Home</nuxt-link
                 >
                 <nuxt-link
                   to="/gpios"
-                  class="
-                    text-white
-                    hover:bg-blue-400 hover:text-white
-                    px-3
-                    py-2
-                    rounded-md
-                    text-sm
-                    font-medium
-                  "
+                  class="px-3 py-2 rounded-md text-sm font-medium"
                   >GPIOS</nuxt-link
                 >
               </div>
@@ -61,31 +44,12 @@
         <div class="px-2 pt-2 pb-3 space-y-1">
           <nuxt-link
             to="/"
-            class="
-              bg-blue-400
-              text-white
-              block
-              px-3
-              py-2
-              rounded-md
-              text-base
-              font-medium
-            "
-            aria-current="page"
+            class="block px-3 py-2 rounded-md text-base font-medium"
             >Home</nuxt-link
           >
           <nuxt-link
             to="/gpios"
-            class="
-              text-white
-              hover:bg-blue-400 hover:text-white
-              block
-              px-3
-              py-2
-              rounded-md
-              text-base
-              font-medium
-            "
+            class="block px-3 py-2 rounded-md text-base font-medium"
             >GPIOS</nuxt-link
           >
         </div>
@@ -93,3 +57,14 @@
     </nav>
   </header>
 </template>
+
+<style scoped>
+.navbar {
+  background-color: #09f;
+  color: #fff;
+}
+.nuxt-link-exact-active {
+  color: #09f;
+  background-color: #fff;
+}
+</style>
