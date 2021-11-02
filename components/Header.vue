@@ -27,7 +27,7 @@
               <div class="flex space-x-4">
                 <nuxt-link
                   to="/"
-                  class="px-3 py-2 rounded-md text-sm font-medium"
+                  class="px-3 py-2 rounded-md text-sm font-medium" exact
                   >Home</nuxt-link
                 >
                 <nuxt-link
@@ -44,7 +44,7 @@
         <div class="px-2 pt-2 pb-3 space-y-1">
           <nuxt-link
             to="/"
-            class="block px-3 py-2 rounded-md text-base font-medium"
+            class="block px-3 py-2 rounded-md text-base font-medium" exact
             >Home</nuxt-link
           >
           <nuxt-link
@@ -63,7 +63,7 @@
   background-color: #09f;
   color: #fff;
 }
-.nuxt-link-exact-active {
+.nuxt-link-active {
   color: #09f;
   background-color: #fff;
 }
