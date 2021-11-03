@@ -15,20 +15,19 @@ export default Vue.extend({
   asyncData(ctx:Context) {
     return new Promise(
       (resolve: PromiseResolve<IGpio>, reject: PromiseReject): void => {
-      const gpio = {
-            id: '1',
-            label: 'GPIO 1',
-            gpio: '1',
-            bcm: '11'
-          };
-      const error = null;
-      if (error)
-        reject(error)
-      else
-        resolve({ 
-          loadedGpio: gpio 
-        })
-
+        const gpio = {
+          id: '1',
+          label: 'GPIO 1',
+          gpio: '1',
+          bcm: '11'
+        };
+        const error = null;
+        if (error)
+          reject(error)
+        else
+          resolve({ 
+            loadedGpio: gpio 
+          })
     }).then(
       (data: IGpio | undefined): IGpio | undefined => data
     ).catch(
