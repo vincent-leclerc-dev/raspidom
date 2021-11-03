@@ -1,35 +1,22 @@
  <template>
-  <div class="container">
-    no GPIO selected
+  <div>
+      <GpioPreview v-for="(gpio, index) in gpios" :key="index" :is-admin="isAdmin" :id="gpio.id" :label="gpio.label"/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
-interface IGpiosForm {
-  gpios: {id:number, label:string}[]
-  gpioSelected: number
-}
-
 export default Vue.extend({
-  data(): IGpiosForm {
-    return {
-      gpios: [{
-          id: 1,
-          label:'GPIO 1'
-     },
-     {
-          id: 2,
-          label:'GPIO 2'
-     }],
-      gpioSelected: 0
+  props: {
+    isAdmin: {
+      type: Boolean,
+      default: false
+    },
+    gpios: {
+      type: Array,
+      required: true
     }
-  },
-  methods: {
-       onGpioChange(): void {
-        this.$router.push('/gpios/'+this.gpioSelected)
-       }
   }
 })
 </script>

@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar">
+    <nav class="bg-blue text-white">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
           <div
@@ -27,7 +27,8 @@
               <div class="flex space-x-4">
                 <nuxt-link
                   to="/"
-                  class="px-3 py-2 rounded-md text-sm font-medium" exact
+                  class="px-3 py-2 rounded-md text-sm font-medium"
+                  exact
                   >Home</nuxt-link
                 >
                 <nuxt-link
@@ -35,6 +36,15 @@
                   class="px-3 py-2 rounded-md text-sm font-medium"
                   >GPIOS</nuxt-link
                 >
+                <nuxt-link
+                  to="/about"
+                  class="px-3 py-2 rounded-md text-sm font-medium"
+                  >About</nuxt-link
+                >
+                <nuxt-link
+                  to="/admin"
+                  class="px-3 py-2 rounded-md text-sm font-medium"
+                  >Admin</nuxt-link>
               </div>
             </div>
           </div>
@@ -44,13 +54,24 @@
         <div class="px-2 pt-2 pb-3 space-y-1">
           <nuxt-link
             to="/"
-            class="block px-3 py-2 rounded-md text-base font-medium" exact
+            class="block px-3 py-2 rounded-md text-base font-medium"
+            exact
             >Home</nuxt-link
           >
           <nuxt-link
             to="/gpios"
             class="block px-3 py-2 rounded-md text-base font-medium"
             >GPIOS</nuxt-link
+          >
+          <nuxt-link
+            to="/about"
+            class="block px-3 py-2 rounded-md text-base font-medium"
+            >About</nuxt-link
+          >
+          <nuxt-link
+            to="/admin"
+            class="block px-3 py-2 rounded-md text-base font-medium"
+            >Admin</nuxt-link
           >
         </div>
       </div>
@@ -59,10 +80,6 @@
 </template>
 
 <style scoped>
-.navbar {
-  background-color: #09f;
-  color: #fff;
-}
 .nuxt-link-active {
   color: #09f;
   background-color: #fff;
